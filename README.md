@@ -68,15 +68,11 @@
 
 │ └── 🚀 index.js # Точка входа
 
-├── 📁 scripts/ # Скрипты деплоя
-
 ├── 🐳 Dockerfile # Docker конфигурация
 
 ├── 🔧 docker-compose.yml # Docker Compose
 
 ├── 📝 nginx.conf # Nginx конфигурация
-
-├── 🚀 Makefile # Команды для разработки
 
 └── 📖 README.md # Документация
 
