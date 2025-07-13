@@ -2,7 +2,7 @@
 
 **🌐 Портфолио с матричной эстетикой**
 
-[🚀 Live Demo](https://your-domain.com)
+[🚀 Live Demo](https://bwl-andromeda-portfolio-a0e9.twc1.net/)
 
 ---
 
