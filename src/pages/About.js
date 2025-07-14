@@ -95,12 +95,14 @@ function About() {
   });
 
   const skills = [
-    { name: "JavaScript/TypeScript", level: 95 },
-    { name: "React.js", level: 90 },
-    { name: "Node.js", level: 85 },
-    { name: "Python", level: 88 },
-    { name: "Cybersecurity", level: 82 },
-    { name: "DevOps", level: 75 },
+    { name: "Bash", level: 60 },
+    { name: "Linux", level: 80 },
+    { name: "Python", level: 55 },
+    { name: "Ansible", level: 30},
+    { name: "Gitlab CI/CD", level: 50},
+    { name: "Git", level: 60},
+    { name: "Docker", level: 50},
+    { name: "Administration", level: 60},
   ];
 
   const containerVariants = {
@@ -130,25 +132,42 @@ function About() {
         animate={inView ? "visible" : "hidden"}
       >
         <Section variants={itemVariants}>
+          <SectionTitle>$ cat photo.jpg</SectionTitle>
+          <Card variants={itemVariants} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 320 }}>
+            <img
+              src={process.env.PUBLIC_URL + '/photo.jpg'}
+              alt="Моё фото"
+              style={{
+                maxWidth: '220px',
+                width: '100%',
+                borderRadius: '8px',
+                border: '2px solid #00ff00',
+                boxShadow: '0 0 30px #00ff0022',
+                background: '#111',
+                objectFit: 'cover',
+              }}
+            />
+          </Card>
+        </Section>
+        <Section variants={itemVariants}>
           <SectionTitle>$ cat bio.txt</SectionTitle>
           <Grid>
             <Card variants={itemVariants}>
               <BioText>
-                Приветствую! Я Ghost_Hacker - специалист по кибербезопасности и
-                full-stack разработчик с более чем 5-летним опытом работы в
-                IT-индустрии.
+                Приветствую, меня зовут Иванов Никита! Я DevSecOps специалист,
+                занимаюсь внедрением безопасности в компании, от этапов моделирования до внедрения и поддержки.
               </BioText>
-              <BioText>
+              {/* <BioText>
                 Моя страсть - исследование уязвимостей, создание защищенных
                 веб-приложений и разработка инструментов для пентестинга. Я
                 верю, что знание того, как ломать системы, делает меня лучшим в
                 их защите.
-              </BioText>
-              <BioText>
+              </BioText> */}
+              {/* <BioText>
                 В свободное время веду блог о безопасности, участвую в
                 CTF-соревнованиях и делюсь знаниями с сообществом информационной
                 безопасности.
-              </BioText>
+              </BioText> */}
             </Card>
 
             <Card variants={itemVariants}>
@@ -170,6 +189,8 @@ function About() {
           </Grid>
         </Section>
 
+        
+
         <Section variants={itemVariants}>
           <SectionTitle>$ ls skills/</SectionTitle>
           <SkillsGrid>
@@ -184,25 +205,40 @@ function About() {
           </SkillsGrid>
         </Section>
 
+
         <Section variants={itemVariants}>
           <SectionTitle>$ cat contact.txt</SectionTitle>
           <Card variants={itemVariants}>
             <ContactInfo>
               <ContactItem>
                 <span>📧</span>
-                <span>ghost.hacker@protonmail.com</span>
-              </ContactItem>
-              <ContactItem>
-                <span>🔗</span>
-                <span>linkedin.com/in/ghost-hacker</span>
+                <span>bwl-andromeda@yandex.ru</span>
               </ContactItem>
               <ContactItem>
                 <span>🐙</span>
-                <span>github.com/ghost-hacker</span>
+                <span>
+                  <a
+                    href="https://github.com/bwl-andromeda"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "inherit", textDecoration: "underline" }}
+                  >
+                    github.com/bwl-andromeda
+                  </a>
+                </span>
               </ContactItem>
               <ContactItem>
                 <span>🌐</span>
-                <span>Telegram: @ghost_hacker</span>
+                <span>
+                  <a
+                    href="https://t.me/bwl_andromeda"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "inherit", textDecoration: "underline" }}
+                  >
+                    Telegram: t.me/bwl_andromeda
+                  </a>
+                </span>
               </ContactItem>
             </ContactInfo>
           </Card>

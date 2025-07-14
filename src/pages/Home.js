@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaTerminal } from "react-icons/fa";
+import { FaGithub, FaTelegramPlane, FaTerminal } from "react-icons/fa";
 import TerminalText from "../components/TerminalText";
 import GlitchText from "../components/GlitchText";
 
@@ -126,8 +126,7 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Проникая в цифровые глубины • Создавая невозможное • Ломая границы
-          кода
+          Мужество • Сила • Терпение
         </Subtitle>
 
         <TerminalSection
@@ -138,9 +137,9 @@ function Home() {
           <TerminalText
             lines={[
               "> whoami",
-              "Full-Stack Developer & Security Researcher",
+              "DevSecOps Engineer",
               "> cat skills.txt",
-              "React.js • Node.js • Python • Cybersecurity",
+              "Bash/Python • Linux • IaC • Monitoring",
               "> ls projects/",
               "web-apps/ • security-tools/ • open-source/",
               '> echo "Добро пожаловать в мой мир"',
@@ -164,11 +163,11 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.5 }}
         >
-          <SocialLink href="https://github.com" target="_blank">
+          <SocialLink href="https://github.com/bwl-andromeda" target="_blank">
             <FaGithub />
           </SocialLink>
-          <SocialLink href="https://linkedin.com" target="_blank">
-            <FaLinkedin />
+          <SocialLink href="https://t.me/bwl_andromeda" target="_blank">
+            <FaTelegramPlane />
           </SocialLink>
         </SocialLinks>
       </Content>
