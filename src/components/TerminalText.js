@@ -27,7 +27,7 @@ const Cursor = styled.span`
   }
 `;
 
-function TerminalText({ lines, speed = 50 }) {
+function TerminalText({ lines, speed = 34 }) {
   const [displayedLines, setDisplayedLines] = useState([]);
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [currentCharIndex, setCurrentCharIndex] = useState(0);

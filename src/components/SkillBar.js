@@ -1,5 +1,5 @@
 // src/components/SkillBar.js
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
@@ -53,12 +53,21 @@ const SkillProgress = styled(motion.div)`
   }
 `;
 
-function SkillBar({ name, level, delay = 0 }) {
+function SkillBar({ name, level, details, delay = 0 }) {
+  const [open, setOpen] = useState(false);
+
   return (
     <SkillContainer>
-      <SkillName>
+      <SkillName
+        style={details ? { cursor: 'pointer' } : {}}
+        onClick={details ? () => setOpen((prev) => !prev) : undefined}
+      >
         <span>{name}</span>
-        <span>{level}%</span>
+        <span>{level}% {details && (
+          <span style={{ marginLeft: 8, fontSize: '1.1em' }}>
+            {open ? '▲' : '▼'}
+          </span>
+        )}</span>
       </SkillName>
       <SkillBarContainer>
         <SkillProgress
@@ -67,6 +76,13 @@ function SkillBar({ name, level, delay = 0 }) {
           transition={{ duration: 1.5, delay, ease: "easeOut" }}
         />
       </SkillBarContainer>
+      {details && open && (
+        <ul style={{ margin: '8px 0 0 0', paddingLeft: '20px', color: '#aaa', fontSize: '0.97em' }}>
+          {details.map((item, idx) => (
+            <li key={idx}>{item}</li>
+          ))}
+        </ul>
+      )}
     </SkillContainer>
   );
 }

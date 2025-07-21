@@ -147,8 +147,8 @@ function Header() {
 
   const navItems = [
     { path: "/", label: "home" },
-    { path: "/about", label: "about.txt" },
-    { path: "/portfolio", label: "projects/" },
+    { path: "/about", label: "about.txt" }
+    // { path: "/portfolio", label: "projects/" },
   ];
 
   const isActive = (itemPath) => {

@@ -139,9 +139,9 @@ function Home() {
               "> whoami",
               "DevSecOps Engineer",
               "> cat skills.txt",
-              "Bash/Python • Linux • IaC • Monitoring",
-              "> ls projects/",
-              "web-apps/ • security-tools/ • open-source/",
+              "Bash/Python • Linux • IaC • Monitoring (in progress)",
+              // "> ls projects/",
+              // "web-apps/ • security-tools/ • open-source/",
               '> echo "Добро пожаловать в мой мир"',
               "Добро пожаловать в мой мир",
             ]}
@@ -156,7 +156,6 @@ function Home() {
           <ActionButton to="/about">
             <FaTerminal /> Обо мне
           </ActionButton>
-          <ActionButton to="/portfolio">Проекты</ActionButton>
         </ButtonGroup>
         <SocialLinks
           initial={{ opacity: 0 }}
