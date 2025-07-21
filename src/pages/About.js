@@ -305,7 +305,14 @@ function About() {
             <ContactInfo>
               <ContactItem>
                 <span>📧</span>
-                <span>bwl-andromeda@yandex.ru</span>
+                <span>
+                  <a
+                    href="mailto:bwl-andromeda@yandex.ru"
+                    style={{ color: "inherit", textDecoration: "underline" }}
+                  >
+                    bwl-andromeda@yandex.ruо
+                  </a>
+                </span>
               </ContactItem>
               <ContactItem>
                 <span>🐙</span>
