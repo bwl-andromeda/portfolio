@@ -255,11 +255,11 @@ function About() {
               <BioText>
                 C 2022 года по 2025 год проходил курсы на платформе "Netology" по специальности "Fullstack-python разработчик"
               </BioText>
-              <BioText>
+              {/* <BioText>
                 В свободное время веду блог о безопасности, участвую в
                 CTF-соревнованиях и делюсь знаниями с сообществом информационной
                 безопасности.
-              </BioText>
+              </BioText> */}
             </Card>
 
             <Card variants={itemVariants}>
